@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatsHome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=''>CatsHome.</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Catshome</a></li>
+                    <li><a href="#cats">Our Cats</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <section id="home">
+            <img src="https://img.freepik.com/free-vector/hand-drawn-international-cat-day-illustration_52683-87848.jpg?t=st=1734440032~exp=1734443632~hmac=ec74bd5f44c9d2cee5562806c2fd32a11522cd6fe17b61471dfb5f4b988c5fcb&w=900"/>
+            <div class="kolom">
+              <p class="deskripsi">Let's be the new home for these cats!</p>  
+              <h4>Find out more about these cats</h4>
+              <p><a href="#cats" class="tbl-pink">Learn more</a></p>
+            </div>
+        </section>
+
+        <section id="about">
+                <div class="kolom">
+                    <p class="deskripsi">About us</p>
+                    <h2>Hey there, cat lovers!</h2>
+                    <p>Welcome to CatsHome, a cozy little corner dedicated to helping adorable cats find their forever homes. We’re here to connect you with your new furry best friend because we believe every kitty deserves a loving family and a warm lap to nap on.</p>
+                    <p>At CatsHome, you can meet the sweetest cats who are ready to be adopted. We’re more than just a website, we’re matchmakers for humans and cats. So, whether you’re looking to adopt or just browsing for a daily dose of cuteness, CatsHome has a little something for everyone.</p>
+                </div>
+                <img src="https://img.freepik.com/free-vector/hand-drawn-international-cat-day-illustration_52683-87845.jpg?t=st=1734447710~exp=1734451310~hmac=559e6a7fd508f1fe85b850c5eb1e44821f9df5dc548b4dcf6a6581b466e13c85&w=996"/>
+        </section>
+
+        <section id="cats">
+            <div class="kolom">
+                <p class="deskripsi">Our Cats</p>
+                <h2>Say hello to some of the cutest, cuddliest, and quirkiest cats you’ll ever meet!</h2>
+                <p>From playful kittens to snuggly lap cats, each one of our feline friends has their own unique charm and story to share. Take a peek, fall in love, and maybe… just maybe, find your new best friend.</p>
+                <p>Because every cat deserves a home, and every home deserves a cat! </p>
+                <h5>Scroll down to meet the purr-fect little fluffballs waiting for their forever home! Who knows? Your new best friend might just be a paw-swipe away!</h5>
+                </div>
+                <img src="https://img.freepik.com/free-vector/hand-drawn-international-cat-day-illustration_23-2149508709.jpg?t=st=1734482122~exp=1734485722~hmac=bf329fa8635b387e78f58770a164ae17cca824c674dfa05523fc107ea6aa28d0&w=740"/>
+        </section>
+        
+        <section class="gallery">
+             <!-- Kitten 1 -->
+            <div class="cats-card" onclick="openSlide(1)">
+                <img src="https://i.pinimg.com/236x/65/4e/5d/654e5dfd5a65a81dea2ec1e80a18a03e.jpg" alt="Sunny"/>
+                <h3>Sunny</h3>
+                <p>Sunny is a little ball of sunshine wrapped in fur!</p>
+                <h5 class="read-more">Click here to read more</h5>
+            </div>
+        
+            <!-- Kitten 2 -->
+            <div class="cats-card" onclick="openSlide(2)">
+                <img src="https://i.pinimg.com/236x/88/00/c0/8800c04efbb1b063df850ffe4e1abc75.jpg" alt="Tabby">
+                <h3>Tabby</h3>
+                <p>A true homebody at heart, Tabby feels happiest and safest indoors.</p>
+                <h5 class="read-more">Click here to read more</h5>
+            </div>
+        
+            <!-- Kitten 3 -->
+            <div class="cats-card" onclick="openSlide(3)">
+                <img src="https://i.pinimg.com/474x/d7/d1/3a/d7d13a0ff134809c6edf4f2feff6c801.jpg" alt="Midnight">
+                <h3>Midnight</h3>
+                <p>This little ball of energy loves to play, pounce, and zoom around like a ninja on a mission!</p>
+                <h5 class="read-more">Click here to read more</h5>
+            </div>
+        </section>
+        
+            <!-- Slide untuk Kitten 1 -->
+            <div class="slide" id="slide1">
+                <img src="https://i.pinimg.com/236x/e2/1a/cd/e21acd4b0eb25ce3dfeb0483c3360780.jpg" alt="photo 1">
+                <p>With a cheerful personality that can brighten even the cloudiest days, Sunny loves nothing more than to run, jump, and play outdoors.</p>
+                <p>Whether it’s chasing leaves, pouncing on imaginary prey, or simply soaking up the sun, this adventurous kitty is always on the move.</p>
+                <button class="close-btn" onclick="closeSlide(1)">Tutup</button>
+            </div>
+        
+            <!-- Slide untuk Kitten 2 -->
+            <div class="slide" id="slide2">
+                <img src="https://i.pinimg.com/236x/72/3c/23/723c23dc78d938e1da983abc60eb3b27.jpg" alt="photo 1">
+                <p>Tabby is the ultimate cuddle champion! This sweet and affectionate kitty absolutely loves snuggling up on</p>
+                <p>couch, in bed, or even on your lap—wherever you are, Tabby is ready for some quality cuddle time.</p>
+                <button class="close-btn" onclick="closeSlide(2)">Tutup</button>
+            </div>
+        
+            <!-- Slide untuk Kitten 3 -->
+            <div class="slide" id="slide3">
+                <img src="https://i.pinimg.com/736x/43/80/95/438095db3bf512f483d92fa9d1565312.jpg" alt="photo 1">
+                <p>Midnight can turn anything into a toy—feathers, string, or even your shoelaces. When she’s not busy being the life</p>
+                <p>of the party, she’s probably plotting her next playful adventure or waiting for you to join the fun.</p>
+                <button class="close-btn" onclick="closeSlide(3)">Tutup</button>
+            </div>
+    </div>
+
+    <div id="contact">
+        <div class="wrapper">
+            <div class="footer">
+                <div class="footer-section">
+                    <h3>Catshome.</h3>
+                    <h5>Published on: December 18, 2024</h5>
+                    <p>Welcome to CatsHome! This is the official launch day of our cozy space dedicated to connecting adorable cats with their forever homes.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <p>CatsHome is a fun and heartwarming platform built to help cats find loving families. Whether you’re looking for a playful kitten or a snuggly companion, we’ve got the perfect furry friend waiting for you. Join us in giving these kitties a second chance at happiness!</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <h5>Contact us at</h5>
+                    <p>Telegram : @dayyymasss</p>
+                       Nama: Ida Ayu Mas Dwi Danakitri
+                       NIM: 2405551023
+                       Universitas: Universitas Udayana
+                       Program: Teknologi Informasi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openSlide(slideNumber) {
+            document.getElementById(`slide${slideNumber}`).style.display = 'flex';
+        }
+
+        function closeSlide(slideNumber) {
+            document.getElementById(`slide${slideNumber}`).style.display = 'none';
+        }
+    </script>
+</body>
+</html>
